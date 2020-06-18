@@ -44,7 +44,7 @@ public class IntToEng {
 					s[length-1]="eight";
 				}else if(c[length-1]=="9") {
 					s[length-1]="nine";
-				}else if(c[length-1]=="2") {
+				}else if(c[length-1]=="") {
 					s[length-1]="";
 				}
     		}
@@ -54,6 +54,29 @@ public class IntToEng {
     			}else if(c[length-1]=='2') {
     				s[length-2]="twelve";
     			}
+    		 }else if(c[length-1]=='3') {
+    			    s[length-2]="thirteen";
+    			   }else if(c[length-1]=='4') {
+    			    s[length-2]="fourteen";
+    			   }else if(c[length-1]=='5') {
+    			    s[length-2]="fifteen";
+    			   }else if(c[length-1]=='6') {
+    			    s[length-2]="sixteen";
+    			   }else if(c[length-1]=='7') {
+    			    s[length-2]="seventeen";
+    			   }else if(c[length-1]=='8') {
+    			    s[length-2]="eightteen";
+    			   }else if(c[length-1]=='9') {
+    			    s[length-2]="nineteen";
+    			   }else{
+    			    s[length-2]="ten";
+    			   }
+    			  s[length-1]="";
+    			  }
+    			  else if(c[length-2]=='2') {
+    			   s[length-2]="twenty ";
+    			  }else if(c[length-2]=='3') {
+    			   s[length-2]="thirty ";
     		}
     			
     		}
