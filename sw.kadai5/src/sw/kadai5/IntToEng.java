@@ -12,9 +12,19 @@ public class IntToEng {
      
     // 数値を英訳する変換するメソッド
     static String translateEng(int n) {
-        return "";
+    	String number = String.copyValueOf(n);
+    	char[] c = number.toCharArray();
+    	String[] s = getNum(c.length,c);
+    	String num="";
+    	for(int i=0;i<s.length;i++) {
+    		num+=s[i];
+    	}
+        return num;
     }
-    
+    static String[] getNum (int length,char[] c) {
+    	String[] s=new String[length];
+    	if(length>0) {
+    	}
 }
 
 
